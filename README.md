@@ -8,7 +8,7 @@ A modern, clean banking app UI built with Flutter — fully converted from a Fig
 
 | Screen | Description |
 |--------|-------------|
-| "assets/images/1.png" | Secure login with PIN pad & biometric auth |
+| [Screen 1](assets/images/1.png) | Secure login with PIN pad & biometric auth |
 | assets/images/2.png | Main screen showing card details & balance |
 | assets/images/4.png | Quick transfer to recent contacts |
 | assets/images/12.png | Transaction history with income/expense |
