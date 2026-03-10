@@ -99,7 +99,12 @@ Original design by the Figma community.
 
 ## 📸 Screenshots
 
-> _Add your screenshots here after running the app_
+|[Screen p1](assets/images/p1.png)|
+|[Screen p2](assets/images/p2.png)|
+|[Screen p3](assets/images/p3.png)|
+|[Screen p4](assets/images/p4.png)|
+|[Screen p5](assets/images/p5.png)|
+|[Screen p6](assets/images/p6.png)|
 
 ---
 
