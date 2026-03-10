@@ -13,11 +13,11 @@ A modern, clean banking app UI built with Flutter — fully converted from a Fig
 | [Screen 3](assets/images/4.png) | Quick transfer to recent contacts |
 | [Screen 4](assets/images/12.png) | Transaction history with income/expense |
 | [Screen 5](assets/images/13.png) | Bottom sheet for quick actions |
-| [Screen 6](assets/images/3.png) | Full app flow covered
-| [Screen 7](assets/images/8.png) |
-| [Screen 8](assets/images/10.png) |
-| [Screen 9](assets/images/9.png) |
-| [Screen 10](assets/images/11.png) | 
+| [Screen 6](assets/images/3.png) | Cards page
+| [Screen 7](assets/images/8.png) | Statistic Page
+| [Screen 8](assets/images/10.png) | Widgets page
+| [Screen 9](assets/images/9.png) | Settings (Personal) page
+| [Screen 10](assets/images/11.png) | Settings (Cards) page
 
 ---
 
