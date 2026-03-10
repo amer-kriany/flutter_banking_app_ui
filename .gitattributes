@@ -1,0 +1,3 @@
+# تجاهل كل لغات البرمجة ما عدا دارت
+* linguist-vendored
+*.dart linguist-vendored=false
