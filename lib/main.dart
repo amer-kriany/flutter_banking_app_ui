@@ -1,6 +1,5 @@
 import 'package:banking_app/Wallet.dart';
 import 'package:banking_app/cards.dart';
-import 'package:banking_app/sendMoney.dart';
 import 'package:banking_app/settings.dart';
 import 'package:banking_app/statistic.dart';
 import 'package:flutter/material.dart';
@@ -28,7 +27,7 @@ class _MainState extends State<Main> {
         "statistic": (context) => Statistic(),
         "Wallet": (context) => Wallet(),
         "settings": (context) => settings(),
-        "sendMoney": (context) => Sendmoney(),
+        
       },
 
       home: Wallet(),

@@ -1,5 +1,6 @@
 import 'package:banking_app/componets/SlideUpAnimation.dart';
 import 'package:banking_app/componets/customizedTapBar.dart';
+import 'package:banking_app/sendMoney.dart';
 import 'package:flutter/material.dart';
 
 class Wallet extends StatefulWidget {
@@ -115,7 +116,15 @@ class _WalletState extends State<Wallet>
                       children: [
                         InkWell(
                           onTap: () {
-                            Navigator.of(context).pushNamed("sendMoney");
+                            Navigator.of(context).push(
+                              MaterialPageRoute(
+                                builder: (context) {
+                                 return Sendmoney(
+                                    Image: Image.asset("${contacts[val]["image"]}"),
+                                  );
+                                },
+                              ),
+                            );
                           },
                           child: ClipRRect(
                             borderRadius: BorderRadius.circular(16),

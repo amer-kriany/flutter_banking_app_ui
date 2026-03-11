@@ -4,7 +4,8 @@ import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 
 class Sendmoney extends StatefulWidget {
-  const Sendmoney({super.key});
+  final Widget Image;
+  const Sendmoney({super.key, required this.Image});
 
   @override
   State<Sendmoney> createState() => _SendmoneyState();
@@ -51,7 +52,7 @@ class _SendmoneyState extends State<Sendmoney> {
                 ),
                 child: Row(
                   children: [
-                    Image.asset("assets/images/Rectangle 380.png"),
+                    widget.Image,
                     Column(
                       crossAxisAlignment: CrossAxisAlignment.start,
                       mainAxisAlignment: MainAxisAlignment.center,
