@@ -1,6 +1,7 @@
 import 'package:banking_app/componets/SegmentSeparator.dart';
 import 'package:banking_app/componets/SlideUpAnimation.dart';
 import 'package:banking_app/componets/fl_chart.dart';
+import 'package:banking_app/widgets.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
 import 'package:banking_app/componets/customizedTapBar.dart';
@@ -13,7 +14,8 @@ class Statistic extends StatefulWidget {
   State<Statistic> createState() => _StatisticState();
 }
 
-class _StatisticState extends State<Statistic> with SingleTickerProviderStateMixin<Statistic>, SlideUpMixin {
+class _StatisticState extends State<Statistic>
+    with SingleTickerProviderStateMixin<Statistic>, SlideUpMixin {
   @override
   void initState() {
     super.initState();
@@ -25,6 +27,7 @@ class _StatisticState extends State<Statistic> with SingleTickerProviderStateMix
     super.dispose();
     disposeSlide();
   }
+
   final List<Map<String, String>> contacts = [
     {
       "name": "Ethan",
@@ -47,12 +50,12 @@ class _StatisticState extends State<Statistic> with SingleTickerProviderStateMix
       "amount": "+\$60",
     },
   ];
-  
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       backgroundColor: Color(0xffF9F9F9),
-      bottomNavigationBar: TapBar(initialIndex:2),
+      bottomNavigationBar: TapBar(initialIndex: 2),
       appBar: AppBar(
         backgroundColor: Color(0xffF9F9F9),
         actionsPadding: EdgeInsets.symmetric(horizontal: 30),
@@ -61,7 +64,18 @@ class _StatisticState extends State<Statistic> with SingleTickerProviderStateMix
           style: TextStyle(fontSize: 34, fontWeight: FontWeight.w800),
         ),
         actions: [
-          SvgPicture.asset("assets/icons/category0.svg", width: 35, height: 35),
+          InkWell(
+            onTap: () {
+              Navigator.of(
+                context,
+              ).push(MaterialPageRoute(builder: (context) => Widgets()));
+            },
+            child: SvgPicture.asset(
+              "assets/icons/category0.svg",
+              width: 35,
+              height: 35,
+            ),
+          ),
         ],
       ),
       body: Stack(
@@ -85,5 +99,4 @@ class _StatisticState extends State<Statistic> with SingleTickerProviderStateMix
       ),
     );
   }
-
 }

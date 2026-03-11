@@ -16,7 +16,9 @@ class _WidgetsState extends State<Widgets> {
     return Scaffold(
       body: Stack(
         children: [
-          Image.asset("assets/images/blur2.png"),
+         
+             Image.asset("assets/images/blur2.png"),
+          
           Container(color: Colors.black.withOpacity(0.01)),
           Column(
             children: [
@@ -32,10 +34,17 @@ class _WidgetsState extends State<Widgets> {
                         fontWeight: FontWeight.w800,
                       ),
                     ),
-                    SvgPicture.asset(
-                      "assets/icons/category.svg",
-                      width: 35,
-                      height: 35,
+                    InkWell(
+                      onTap: () {
+                        Navigator.of(
+                context,
+              ).pushNamedAndRemoveUntil("statistic", (route) => false);
+                      },
+                      child: SvgPicture.asset(
+                        "assets/icons/category.svg",
+                        width: 35,
+                        height: 35,
+                      ),
                     ),
                   ],
                 ),
